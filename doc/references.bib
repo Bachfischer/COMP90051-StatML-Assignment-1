@@ -1,0 +1,36 @@
+@paper{fastgae,
+author = {Salha, Guillaume and Hennequin, Romain and Remy, Jean-Baptiste and Moussallam, Manuel and Vazirgiannis, Michalis},
+year = {2020},
+month = {02},
+pages = {},
+title = {{FastGAE: Fast, Scalable and Effective Graph Autoencoders with Stochastic Subgraph Decoding}}
+}
+
+@article{Kipf2016VariationalGA,
+  title={{Variational Graph Auto-Encoders}},
+  author={Thomas Kipf and M. Welling},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1611.07308}
+}
+
+@inproceedings{pbg,
+  title={{PyTorch-BigGraph: A Large-scale Graph Embedding System}},
+  author={Lerer, Adam and Wu, Ledell and Shen, Jiajun and Lacroix, Timothee and Wehrstedt, Luca and Bose, Abhijit and Peysakhovich, Alex},
+  booktitle={Proceedings of the 2nd SysML Conference},
+  year={2019}
+}
+
+@inproceedings{lightgbm,
+author = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+title = {{LightGBM: A Highly Efficient Gradient Boosting Decision Tree}},
+year = {2017},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Gradient Boosting Decision Tree (GBDT) is a popular machine learning algorithm, and has quite a few effective implementations such as XGBoost and pGBRT. Although many engineering optimizations have been adopted in these implementations, the efficiency and scalability are still unsatisfactory when the feature dimension is high and data size is large. A major reason is that for each feature, they need to scan all the data instances to estimate the information gain of all possible split points, which is very time consuming. To tackle this problem, we propose two novel techniques: Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB). With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. We prove that, since the data instances with larger gradients play a more important role in the computation of information gain, GOSS can obtain quite accurate estimation of the information gain with a much smaller data size. With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features. We prove that finding the optimal bundling of exclusive features is NP-hard, but a greedy algorithm can achieve quite good approximation ratio (and thus can effectively reduce the number of features without hurting the accuracy of split point determination by much). We call our new GBDT implementation with GOSS and EFB LightGBM. Our experiments on multiple public datasets show that, LightGBM speeds up the training process of conventional GBDT by up to over 20 times while achieving almost the same accuracy.},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+pages = {3149–3157},
+numpages = {9},
+location = {Long Beach, California, USA},
+series = {NIPS'17}
+}

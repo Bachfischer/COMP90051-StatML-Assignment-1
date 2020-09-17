@@ -1,0 +1,417 @@
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=1.0 --nb_node_samples=1000 --iterations=200
+-> output.csv
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=1.0 --nb_node_samples=10000 --iterations=600
+-> output_2.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.7904653774761895]
+Mean AUC score:  0.7904653774761895 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.8703421462700518]
+Mean AP score:  0.8703421462700518 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [1941.6200456619263]
+Mean total running time:  1941.6200456619263 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [0.9322857856750488] 
+p_i computed from:  degree
+Mean running time for p_i computation:  0.9322857856750488 
+Std of running time for p_i computation:  0.0 
+
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=1.0 --nb_node_samples=1000 --iterations=400 --dropout=0.2
+-> output_3.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.7624246116463989]
+Mean AUC score:  0.7624246116463989 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.856596756471594]
+Mean AP score:  0.856596756471594 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [1191.0464980602264]
+Mean total running time:  1191.0464980602264 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [0.9041333198547363] 
+p_i computed from:  degree
+Mean running time for p_i computation:  0.9041333198547363 
+Std of running time for p_i computation:  0.0 
+
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=1.0 --nb_node_samples=10000 --iterations=250
+-> output_4.csv
+
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.7994325566552405]
+Mean AUC score:  0.7994325566552405 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.8779343595547981]
+Mean AP score:  0.8779343595547981 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [841.9934501647949]
+Mean total running time:  841.9934501647949 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [0.9235904216766357] 
+p_i computed from:  degree
+Mean running time for p_i computation:  0.9235904216766357 
+Std of running time for p_i computation:  0.0 
+ 
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=10000 --iterations=200 --dropout=0.05
+-> output_5.csv (Best result so far)
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8609892352750196]
+Mean AUC score:  0.8609892352750196 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9181323038207804]
+Mean AP score:  0.9181323038207804 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [15656.866845607758]
+Mean total running time:  15656.866845607758 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.0575547218322754] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.0575547218322754 
+Std of running time for p_i computation:  0.0 
+ 
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=10000 --iterations=200 --validation=True
+-> output_6.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8722567695718362]
+Mean AUC score:  0.8722567695718362 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9249736217945089]
+Mean AP score:  0.9249736217945089 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [16164.629967451096]
+Mean total running time:  16164.629967451096 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.0265071392059326] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.0265071392059326 
+Std of running time for p_i computation:  0.0 
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=15000 --iterations=300 --validation=True --dropout=0.05
+-> output_7.csv
+
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8521261797170768]
+Mean AUC score:  0.8521261797170768 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9122529733976006]
+Mean AP score:  0.9122529733976006 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [24876.895131349564]
+Mean total running time:  24876.895131349564 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.114518642425537] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.114518642425537 
+Std of running time for p_i computation:  0.0 
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=15000 --iterations=300 --validation=True --learning_rate=0.1
+-> output_8.csv
+-> very slow to converge
+-> did not even submit to Kaggle
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=1000 --iterations=300
+-> output_9.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.7821253792268537]
+Mean AUC score:  0.7821253792268537 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.8718451972827217]
+Mean AP score:  0.8718451972827217 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [3920.167069196701]
+Mean total running time:  3920.167069196701 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.156235933303833] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.156235933303833 
+Std of running time for p_i computation:  0.0
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=1000 --iterations=200 --learning_rate=0.1
+-> output_10.txt
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.7871003699878879]
+Mean AUC score:  0.7871003699878879 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.8662622994498549]
+Mean AP score:  0.8662622994498549 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [2653.0747649669647]
+Mean total running time:  2653.0747649669647 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.0737011432647705] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.0737011432647705 
+Std of running time for p_i computation:  0.0 
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=10000 --iterations=300 --dropout=0.05
+-> output_11.csv
+-> compare with output_7.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8316926950236758]
+Mean AUC score:  0.8316926950236758 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.90019622574781]
+Mean AP score:  0.90019622574781 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [4468.678314447403]
+Mean total running time:  4468.678314447403 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.082129716873169] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.082129716873169 
+Std of running time for p_i computation:  0.0 
+
+ 
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=20000 --iterations=300 --dropout=0.05
+
+
+
+
+
+
+
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=10000 --iterations=400 --learning_rate=0.01
+
+-> output_20.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8320553104472104]
+Mean AUC score:  0.8320553104472104 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9001856707451217]
+Mean AP score:  0.9001856707451217 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [4522.934949874878]
+Mean total running time:  4522.934949874878 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [0.9507722854614258] 
+p_i computed from:  degree
+Mean running time for p_i computation:  0.9507722854614258 
+Std of running time for p_i computation:  0.0 
+ 
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=3.0 --nb_node_samples=10000 --iterations=300 --learning_rate=0.05
+-> output_21.csv
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8466630373600115]
+Mean AUC score:  0.8466630373600115 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9082789017148389]
+Mean AP score:  0.9082789017148389 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [3533.143704891205]
+Mean total running time:  3533.143704891205 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.0933451652526855] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.0933451652526855 
+Std of running time for p_i computation:  0.0 
+
+
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=3.0 --nb_node_samples=10000 --iterations=300 --learning_rate=0.01 --dropout=0.1
+-> output_22.csv
+
+AUC scores
+ [0.8573226541954045]
+Mean AUC score:  0.8573226541954045 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9136653469742553]
+Mean AP score:  0.9136653469742553 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [3525.1302144527435]
+Mean total running time:  3525.1302144527435 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [1.1414027214050293] 
+p_i computed from:  degree
+Mean running time for p_i computation:  1.1414027214050293 
+Std of running time for p_i computation:  0.0 
+ 
+python train.py --model=gcn_ae --dataset=statml --task=link_prediction --fastgae=True --measure=degree --alpha=2.0 --nb_node_samples=10000 --iterations=200 --dropout=0.05
+-> output_23.csv
+
+
+Test results for gcn_ae model on statml on link_prediction 
+ ___________________________________________________
+
+AUC scores
+ [0.8634600606762658]
+Mean AUC score:  0.8634600606762658 
+Std of AUC scores:  0.0 
+ 
+
+AP scores
+ [0.9206250816406745]
+Mean AP score:  0.9206250816406745 
+Std of AP scores:  0.0 
+ 
+
+Total Running times
+ [2315.6816787719727]
+Mean total running time:  2315.6816787719727 
+Std of total running time:  0.0 
+
+Running times include the computation of the the p_i distribution:
+ [0.9211175441741943] 
+p_i computed from:  degree
+Mean running time for p_i computation:  0.9211175441741943 
+Std of running time for p_i computation:  0.0 
