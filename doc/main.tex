@@ -85,8 +85,8 @@ The third strategy that we apply is to use the entire graph for learning and ext
 \subsection{Feature Engineering}
 \label{sec:feature_engineering}
 \vspace{-5pt}
-For our experiments, we use the sampled dataset to calculate five metrics that indicate missing links between two node pairs $(u,v)$ via a similarity score. The metrics that were used in this process are shown in table \ref{tbl:feature_table}.
-\vspace{-5pt}
+For our experiments, we use the sampled dataset to calculate five metrics that indicate missing links between two node pairs $(u,v)$ via a similarity score. The metrics that were used in this process are shown in table \ref{tbl:feature_table}:
+\vspace{-10pt}
 \begin{center}
 \begin{table}[h]
 \tabcolsep=0.1cm
@@ -98,7 +98,7 @@ For our experiments, we use the sampled dataset to calculate five metrics that i
     % Definition  \\
     \(|N(u) \cap N(v)|\) & \(\sum_{t\in N(u) \cap N(v)}\frac{1}{|N(w)|}\) & \(\frac{|N(u) \cup N(v)|}{|N(u) \cap N(v)|}\)  & \(\sum_{t\in N(u) \cap N(v)}\frac{1}{\log|N(t)|}\) & \(|N(u)|.|N(v)|\)
 \end{tabular}
-\caption{Overview of features for linear models}
+\caption{Overview of extracted features (\(N(u)\) denotes the neighbours of node $u$)}
 \label{tbl:feature_table}
 \end{table}
 \end{center}
@@ -126,7 +126,7 @@ AdaBoost is an ensemble method that combines weak estimators to build a stronger
 \vspace{-10pt}
 \subsubsection{LightGBM}
 \vspace{-5pt}
-LightGBM \cite{lightgbm} is an implementation of a Gradient Boosting algorithm that uses histograms to bin features into discrete sections. We train two LightGBM classifier using the data obtained from the random and importance-based sampling strategy, set the $objective=binary$ and $boosting=gbdt$ parameters and evaluate their performance. Again we achieve a similiar AUC score as with the previous models which is not surprising since the classifiers that we have described so far all rely on the same data during the training process.
+LightGBM \cite{lightgbm} is an implementation of a Gradient Boosting algorithm that uses histograms to bin features into discrete sections. We train two LightGBM classifiers using the data obtained from the random and importance-based sampling strategy, set the $objective=binary$ and $boosting=gbdt$ parameters and evaluate their performance. Again we achieve a similiar AUC score as with the previous models which is not surprising since the classifiers that we have described so far all rely on the same data during the training process.
 \vspace{5pt}
 \newline
 \textit{Subpar performance of the models described above leads us to the conclusion that in order to get state-of-the-art results on the link prediction problem. we need to find better features that represent more information about the nodes and edges of the full graph (instead of a randomly sampled subset) and that we need to train our models on the full dataset that was provided by the competition organizers.}
@@ -164,7 +164,7 @@ The PyTorch BigGraph system \cite{pbg} supports the automatic learning of graph 
 \midrule
  \multirow{4}{*}{\textbf{PyTorch BigGraph}} & \begin{tabular}{@{}l @{}} $\eta = 0.001$, $loss = logistic$ \\ $n_{epochs}=50$, $d_{embedding}=1024$ \end{tabular} & 0.88553 & Large embedding dimension $d=1024$ and $logistic$ loss\\
 \addlinespace[0.2cm]
-   & \begin{tabular}{@{}l @{}} $\eta = 0.001$  $loss = ranking$  \\ $n_{epochs}=50$, $d_{embeddings}=1024$  \end{tabular} & \textbf{0.93463} & Large embedding dimension $d=1024$ and $ranking$ loss \\
+   & \begin{tabular}{@{}l @{}} $\eta = 0.001$, $loss = ranking$  \\ $n_{epochs}=50$, $d_{embeddings}=1024$  \end{tabular} & \textbf{0.93463} & Large embedding dimension $d=1024$ and $ranking$ loss \\
  \addlinespace[0.1cm]
 \bottomrule
 \end{tabularx}
