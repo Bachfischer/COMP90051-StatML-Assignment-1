@@ -25,6 +25,10 @@ This repository contains the source code for assignment 1 of the COMP90051 Stati
 
 ## System overview
 
-The source code in this repository contains five classification systems for the task of predicting links between users in online social networks:  A traditional [SVM classifier](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html), two [ensemble classifiers](https://lightgbm.readthedocs.io/en/latest/), the [FastGAE graph autoencoder](https://github.com/deezer/fastgae) using a convolutional graph neural network (CGN) as well as a classifier built using the [PyTorch BigGraph framework](https://github.com/facebookresearch/PyTorch-BigGraph).
+This repository contains the source code to implement five classification systems for the task of predicting links between users in online social networks:  
+* A SVM classifier ([Source](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html))
+* Two Ensemble classifiers ([Source](https://lightgbm.readthedocs.io/en/latest/))
+* A FastGAE Graph Autoencoder([Source](https://github.com/deezer/fastgae)) based on convolutional graph neural network (CGN) 
+* A prediction system built using the PyTorch BigGraph framework ([Source](https://github.com/facebookresearch/PyTorch-BigGraph)).
 
 For further information, please refer to the project report attached to this submission.
